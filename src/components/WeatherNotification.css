@@ -1,64 +1,79 @@
 /* WeatherNotification.css */
+.weather-app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
-body {
-    background: linear-gradient(to bottom, #87ceeb, #f0e68c);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .weather-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .app-title {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .weather-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 300px;
-    transition: transform 0.2s;
-  }
-  
-  .weather-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .location {
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .temperature {
-    font-size: 2em;
-    color: #e67e22;
-    margin: 10px 0;
-  }
-  
-  .weather-icon {
-    font-size: 50px;
-    color: #3498db;
-  }
-  
-  .description {
-    font-size: 1.2em;
-    color: #7f8c8d;
-  }
-  
-  .notification {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #e74c3c;
-  }
-  
+.app-title {
+  font-size: 2rem;
+  color: #3498db;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 2rem;
+  color: #e67e22;
+}
+
+.weather-icon {
+  font-size: 3rem;
+  color: #3498db;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.notification {
+  font-size: 1rem;
+  color: #2ecc71;
+  margin-top: 10px;
+}
+
+.error {
+  color: #e74c3c;
+  margin-top: 10px;
+}
